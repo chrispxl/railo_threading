@@ -7,6 +7,7 @@ writeOutput("threadName: #threadName#");
 try {
 	writeDump( "test: " & cfthread["#threadName#"].status );
 }catch (any e) {
+
 	thread name="#threadName#" duration=0 timeout=60 {
 		iterator = 1;
 		private void function runtest( ) hint="Run a simple thread test" {
